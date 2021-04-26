@@ -1,16 +1,3 @@
-// $("h1").css("color","red");
-// $(".menu li").css({
-//     "background-color":"#999","color":"white"
-// });
-// $(".slider-thumb li:first-child").addClass("current");
-// $(".slider-thumb img").on("mouseover",function(){
-//     $(this).toggleClass("current");
-// })
-
-// $(".slider-comment h2").click(function(){
-//     $(this).fadeOut(1000);
-// });
-
 $(".slider-thumb img").click(function(){
     let imgSrc = $(this).attr("src");
     console.log(imgSrc);
@@ -20,13 +7,6 @@ $(".slider-thumb img").click(function(){
         $(".slider-img img").attr("src",imgSrc).fadeIn(1000);
     });
 });
-
-
-// $(".slider-thumb img").click(function(){
-//     let imgSrc = $(this).attr("src");
-//     $(".slider-img img").attr("src",imgSrc);
-//     // console.log(imgSrc);
-// })
 
 $(".btn-humbergar button").click(function(){
     $(".mainmenu-sm").toggleClass("fadein");
@@ -52,5 +32,3 @@ $(".menu li").on("mouseover",function () {
         // クリックしたタブと同じインデックス番号をもつコンテンツを表示
         $('.panelbox').eq(index).addClass('show');
     });
-
-
