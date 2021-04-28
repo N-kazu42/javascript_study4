@@ -1,0 +1,18 @@
+#tbl1{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+#tbl1 th,#tbl1 td{
+    padding: 10px 0;
+    text-align: center;
+}
+  
+#tbl1 tr:nth-child(odd){
+    background-color: #eee
+}
+
+#addCount {
+    width: 20px;
+}
